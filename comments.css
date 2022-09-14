@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+   }
+   
+   .name {  /* Gary Blue's Diner logo*/
+    color:rgb(246, 255, 0);
+    align-items:stretch;
+    font-size: calc(5px + 4.5vmin);  
+    margin-top: 1.5rem; /* for Gary Blue's header*/
+    margin-left: 1.5rem;
+    z-index: 999;
+  }
+   h3 {
+    color:blue;
+    align-items:stretch;
+    font-size: calc(5px + 3.5vmin);  
+    margin-top: .005rem; /* for Gary Blue's header*/
+    margin-left: 5rem;
+    z-index: 999;   
+   }
+
+   .navbar {  
+    background: #128ada;
+     height: 8.8125rem;
+     display: flex;
+     justify-content:flex-start;  
+     width: 100%;
+     z-index: 999;
+   }
+   
+   .navbar__container {
+    overflow: hidden;
+     position: fixed;
+     display: flex;  
+     margin-left: 8.125rem;
+     height: 1.875rem;
+     z-index: 1;
+     width: 100%;
+     max-width: 81.25rem; 
+   }
+   
+   .navbar__menu {  
+    display: flex;
+    align-items:flex-start;
+    list-style: none;
+    text-align: center;
+    padding: .2rem .25rem;
+    height: 0.625rem;
+    margin-top: .5rem;
+   }
+   
+   .navbar__item { /* Home ,reviews*/
+    height: 2.9rem;
+    margin-left: 1rem;
+    margin-right: 2.75rem;
+    color: #fff;
+   }
+   
+   .navbar__links {  /*  Home, Reviews*/
+    color: #fff;
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    text-decoration: none;
+    padding: 2.2rem .1rem;
+    font-size: calc(5px + 1.75vmin);  /* font siz of Home, reviews*/
+   }
+   
+   .navbar__links:hover {
+    color: blue;
+    transition: all 0.3s ease;
+   }
+   
+/* Reviews dropdown button*/
+.dropbtn {                   
+    background-color: inherit;
+    color: white;
+    padding: 1rem;
+    margin-left: 0;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+   }
+   
+   .dropbtn:hover, .dropbtn:focus {
+    color: blue;
+    transition: all 300ms ease-in-out;
+   }
+   
+   #myInput {  /* search bar in drop down*/
+    box-sizing: border-box;  
+    background-repeat: no-repeat;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border:mediumblue;
+    border-bottom: .0625rem solid #ddd;
+   }
+      
+   .dropdown {
+    position:relative;
+    margin-left: -.25rem;
+    margin-right: 0;
+   
+    display:block;
+   }
+   
+   .dropdown-content {/* dropdown inside content*/
+    display: none;
+    position:absolute;
+    text-align:center;
+    background-color:lightskyblue;
+    min-width: 1.375rem;
+    overflow: auto;
+    border: 0.0625rem solid blue;
+    border-radius: 3%;
+    z-index: 1;
+   }
+   
+   .dropdown-content a {
+    color: black;
+    padding: .75rem 1.1rem;
+    font-size: .85rem;
+    text-decoration: none; 
+    display: block;
+   }
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+form{
+ border: 1px solid gray;
+ padding: 2em;
+
+ max-width: 400px;
+ min-width: 400px;
+ margin-top: 2rem;
+ margin-left: auto;
+ margin-right: auto;
+
+ display:grid;
+ grid-template-columns: 1f 2fr;
+ grid-gap: 15px;
+}
+
+form label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+input,textarea{
+width:100%;
+padding: 0.2em;
+font-size: 1em;
+border:1px solid gray;
+border-radius: 0.30em
+}
+
+input:focus,
+textarea:focus{
+ outline:1px solid greenyellow;
+ background-color: rgb(183, 217,245);
+
+}
+
+textarea{
+ grid-column: 1/3;
+}
+
+.buttons{
+ grid-column: 2/3;
+ text-align:right;
+}
+
+input[type="submit"],
+input[type="reset"]{
+ width:150px;
+ background-color: lightseagreen;
+ border:none;
+ color:white;
+ cursor:pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus{
+background-color:rgb(61,61,3);}
+
+.map {  
+margin-left: auto;
+margin-right: auto;
+}
+
+.contact-right {
+display: flex;
+justify-content: center;
+padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .img,.img2, #container1, #container2 {
+       flex-direction: column;
+       max-width: 100%;
+       height: auto;
+   }
+ }
+
+ /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+  body, .special, .special1 {
+    font-size: 10px;
+  }
+}
+
+/* If the screen size is 600px or less, set the font-size of <div> to 30px */
+@media only screen and (max-width: 600px) {
+  body, .special, .special1{
+    font-size: 30px;
+  }
+}

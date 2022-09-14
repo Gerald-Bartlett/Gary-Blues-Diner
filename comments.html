@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Comments</title>
+ <link rel="stylesheet" href="comments.css">
+  <script src="comments.js"></script>
+</head> 
+<body style="text-align:center">
+
+  <nav class='navbar'> 
+   <header> 
+     <h1 class='name'> Gary Blue's Diner</h1>  
+     
+   </header>   
+   <div>
+    <ul class="navbar__menu">     
+       <li class="navbar__item"><a href="http://127.0.0.1:5502/index.html" target="_blank" class="navbar__links">Home</a></li>                 
+            
+       <div>
+         <li class="navbar__item">  
+         <button onclick="myFunction()" class="dropbtn">Reviews</button> 
+         <div id="myDropdown" class="dropdown-content">
+           <!-- <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"> -->
+           <p><h1 class="review-header">Reviews & comments</h1></p><br> 
+           <p><h4 class="commentor">Maurice B.</h4></p>
+           <h4 class="comments">Great service, Great food... Coming Back soon</h4><br>
+           <p><h4 class="commentor">Roy B.</h4></p>
+           <p><h4 class="comments">wow nar bit good bye!, ... Can't wait for seconds</h4></p><br>
+           <p><h4 class="commentor">Noman A.</h4></p>
+           <p><h4 class="comments">They cook better than mudder... </h4></p><br>
+           <p><h4 class="commentor">Levin M.</h4></p>
+           <p><h4 class="comments">Best food this side of Canada</h4></p><br>          
+         </li>
+         </div>
+        </nav>
+  <div>
+    <section>
+      <h3>Please leave a comment, Thank you</h3>
+       <form action="/data method" method = "post">
+          <a href="#"></a><section id="Contact"></section>
+          <label for="first-name"></label>  
+        <input
+          id="first-name"
+          name="firstname"
+        type="text"
+        autofocus
+        autocomplete="given-name"
+        placeholder="First Name"
+        maxlength="30"
+        tabindex="1"
+        >
+        <label for="Last-Name"></label>
+        <input 
+        id="Last-Name"
+        name="LastName"
+        type="text"
+        autocomplete="given-name"
+        placeholder="Last Name"
+        maxlength="30"
+        tabindex="2"
+        >
+  
+            <label for="email"></label>
+            <input
+            id="email"
+            type="email"
+            autocomplete="email"
+            placeholder="Valid Email Address"
+            tabindex="3"
+            >
+            
+            <label for="date"></label>
+            <input
+            id="date"
+            type="date"
+            name="date"
+            tabindex="3"
+            >
+                      
+            <textarea 
+            name="Research"
+            id="Research"
+            cols="20" 
+            rows="5"
+            tabindex="4"
+            placeholder="Enter Your Question or Comment Here"></textarea>    
+            
+            <div class= "buttons">
+            <input type="submit" name="submit" value="send">
+            <input type="reset" name="reset" value="clear">
+            </div> 
+           <form>
+          </div>
+          </section>
+        <div>
+        <div class="contact-right">
+        <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1U1hFpweDv5K3C0lbWRDJbdkzhfc&hl=en" width="750" height="350"></iframe>
+        </div>
+        </div>
+      </div> 
+    </div>  
+</body>
+</html>

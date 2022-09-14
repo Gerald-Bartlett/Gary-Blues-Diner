@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="order.css" /><!-- This is to link my css to html-->
+    <script src="order.js"></script> <!-- link to external javascript page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> <!-- this is skeleton css gives the form layout look-->
+    
+    <title>Gary Blue's Chicken Sandwiches Customer Order's / Delivery</title>
+  </head>
+  <div>
+    <nav class='navbar'>
+     <h1 class='name'>Gary Blue's Diner</h1>       
+     <li class ="links" ><a href="http://127.0.0.1:5502/index.html" target="_blank" class="navbar__links">Home</a></li>                 
+     <li class ="links" ><a href="http://127.0.0.1:5502/menu2.html" target="_blank" class="navbar__links">Menu</a></li>                 
+     <li class ="links" ><a href="http://127.0.0.1:5502/order_page.html" target='_blank' class="navbar__links">Order </a></li>        
+     <li class ="links" ><a href="http://127.0.0.1:5502/Locations.html" target='_blank' class="navbar__links">Locations </a></li>    
+     <li class ="links" ><a href="http://127.0.0.1:5502/Locations.html" target='_blank' class="navbar__links">Jobs </a></li>        
+     <li class ="links" ><a href="http://127.0.0.1:5502/comments.html" target="_blank" class="navbar__links">Comments</a></li>
+     </nav>
+   </div>
+   </head>
+  <body>
+    <br>
+   <!-- <hr id="line1"> -->
+    <div class="container">
+      <h1>Gary Blue's Chicken Sandwiches</h1>
+       <h1>Customer Order's / Delivery</h1>
+      <form id="order-form">
+        <div id="Order1">
+        <label for="name">Name</label> <!-- text above label-->  
+          <input type="text" id="name" /> 
+          </div>
+
+        <div id="address1">
+            <label for="address">Address</label> <!-- text above label -->
+           <input type="text" id="address" /> 
+        </div>
+
+        <div id="phone1">  
+         <label for="phone">Phone</label>  <!--text above label -->
+         <input type="text" id="phone" />  
+        </div>
+
+        <div id="orderCost1">
+          <label for="order">Order Cost</label>  <!-- text above label -->
+          <input type="text" id="orderCost"/> 
+        </div>
+
+       <div id="hst1">
+        <label for="hst">Hst</label>  <!--text above label -->
+        <input type="text" id="hst"/> 
+       </div>
+
+        <div id="orderTotal1">
+          <label for="orderTotal">Order Total </label>   <!-- text above label -->
+          <input type="text" id="orderTotal"/> 
+        </div>     
+    
+        <div><input type="submit" value="Add To order List" id="subtext"/>
+       
+         </div>         
+        </div>
+      </form>
+      <div id="temp"></div>
+      <table class="u-full-width">
+        <thead>
+          <tr> 
+            <th id="name">Name</th> <!--text above list -->
+            <th id="address">Address</th>
+            <th id="phone">Phone</th>            
+            <th id="orderCost">Order Cost</th>
+            <th id="hst">Hst</th>
+            <th id="orderTotal">Order Total</th>
+          </tr>
+        </thead>
+        <tbody id="order-list"></tbody>
+      </table>      
+    </div> 
+  
+  </body>
+</html>

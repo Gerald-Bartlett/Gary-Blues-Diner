@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+ }
+ 
+ .name {  /* Gary Blue's Diner logo*/
+   color:rgb(246, 255, 0);
+   align-items:stretch;
+   font-size: calc(5px + 4.5vmin);  
+   margin-top: 1.5rem; /* for Gary Blue's header*/
+   margin-left: 1.5rem;
+   z-index: 999;
+ }
+ 
+ .navbar { 
+   list-style:none ;
+   text-decoration: none; 
+  background: #128ada;
+   height: 7.8125rem;
+   display: flex;
+   justify-content:flex-start;  
+   width: 100%;
+   z-index: 999;
+ }
+ 
+ .navbar__container {
+   
+  overflow: hidden;
+   position: fixed;
+   display: flex;  
+   margin-left: 8.125rem;
+   height: 1.875rem;
+   z-index: 1;
+   width: 100%;
+   max-width: 81.25rem; 
+ }
+ 
+ .navbar__menu {  
+   
+  display: flex;
+  align-items:flex-start;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  padding: .2rem .25rem;
+  max-height: 0.625rem;
+  margin-top: .5rem;
+ }
+ 
+ .navbar__item { /* menu, order, locations, contact, about, jobs RSU*/
+   
+  height: 3rem;
+  margin-left: 1.5rem;
+  margin-right: 2rem; 
+  color: #fff;
+  font-size: calc(5px + 1.75vmin);
+  
+ }
+ 
+ 
+ .navbar__links {  /*  Menu, Order, Locations, Reviews, About, Jobs*/
+  
+  color: #fff;
+  display: flex;
+  /* align-items:baseline; */
+  margin-left: 4rem;
+  justify-content: center;
+  text-decoration: none;
+  padding: 2.4rem 1.5rem ;
+  font-size: calc(5px + 1.75vmin);  /* font siz of Menu, Order, Locations, Reviews, About, Jobs*/
+ }
+ 
+ .navbar__links:hover {
+   
+  color: blue;
+  transition: all 0.3s ease;
+ }
+
+
+
+.success,
+.error {  /* alert text color, padding & margins*/
+  color:black;
+  padding: 5px;
+  margin: 0px 0 0px 0;
+}
+.success {
+  background-color:rgb(157, 238, 157); /* alert success - label background */
+}
+.error {
+  background-color:orangered;  /* label background alert color*/
+}
+h1 {  /* tile: Gary Blue's Chicken Sandwiches*/
+ text-align: center;
+ color:Blue;
+ 
+}
+#phone1,#name, #form,#Order1,  #subtext, #where, #address1, #address{  /* this is outside Label and list header text*/
+ font-family: cursive;
+ color:blue;
+ 
+}
+
+#phoneNumber, #order-list,#orderCost1, #phone, #orderCost,#hst1, #hst, #orderTotal, #orderTotal1{  /* this is inside label & list text*/
+ font-family: cursive;
+ color:orangered;
+}
+ 
